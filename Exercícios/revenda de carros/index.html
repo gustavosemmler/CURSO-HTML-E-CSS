@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="" type="image/x-icon">
+<title>The queen Concessionária</title>
+<style>
+  /* Estilos do código CSS aqui */
+
+  /* Adicione estilos para o ícone do WhatsApp */
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos para as informações no topo */
+  .top-info {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* Centralizar imagens e definir tamanho */
+  .car img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* Estilos para a barra de navegação */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Estilos para a animação de carro andando */
+  @keyframes carAnimation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+  }
+
+  .car-animation {
+    animation: carAnimation 3s infinite;
+  }
+</style>
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <div class="navbar">
+    <a href="#vendas">Vendas</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#modelos">Modelos</a>
+    <!-- Adicione mais links conforme necessário -->
+  </div>
+
+  <!-- Seção de informações no topo -->
+  <div class="top-info">
+    <p>Entre em contato: (11) 9 1234-5678 | Email: contato@revendadecarros.com</p>
+  </div>
+
+  <header>
+    <h1>Revenda de Carros</h1>
+    <p>Os melhores carros usados à venda</p>
+    <hr> <!-- Linha de separação -->
+    <p>Confira nossa seleção de modelos incríveis:</p>
+    <!-- Animação de carro andando -->
+    <img src="car-animation.gif" alt="Car Animation" class="car-animation">
+  </header>
+  <div class="container">
+    <div class="car-list">
+      <div class="car">
+        <img src="toyota modificado.jpg" alt="Carro 1">
+        <h2>Suzuki Jimny Sierra 4Sport</h2>
+        <p>Ano: 2024</p>
+        <p>Preço: R$148.900</p>
+        <hr>
+      </div>
+      <div class="car">
+        <img src="download.jpg" alt="Carro 2">
+        <h2>Toyota Hilux SW4 DIAMOND 2.8 TB 4X4</h2>
+        <p>Ano: 2024</p>
+        <p>Preço: R$680.900</p>
+        <hr>
+      </div>
+      <div class="car">
+        <img src="cherokee.jpg" alt="Carro 3">
+        <h2>Jeep Grand Cherokee</h2>
+        <p>Ano: 2024</p>
+        <p>Preço: R$720.000</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ícone do WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=5511916580458" class="whatsapp-icon" target="_blank">
+    <i class="fa fa-whatsapp"></i> <!-- Você pode usar uma biblioteca de ícones ou uma tag <img> para o ícone -->
+  </a>
+</body>
+</html>
