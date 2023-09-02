@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(212, 210, 210);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(26, 25, 25);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        div#c {
+            width: 50vh;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat, nam labore amet impedit quam maxime voluptate magni eveniet eius. Expedita voluptatum doloribus perferendis veritatis laborum rem architecto doloremque qui.</p>
+    <div id="c">
+        <table>
+            <caption>
+                Tabelas Responsivas
+            </caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th>Março</th>
+                    <th>Abril</th>
+                    <th>maio</th>
+                    <th>j</th>
+                    <th>julho</th>
+                    <th>agosto</th>
+                    <th>setembro</th>
+                    <th>outubro</th>
+                    <th>novembro</th>
+                    <th>dezembro</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>
